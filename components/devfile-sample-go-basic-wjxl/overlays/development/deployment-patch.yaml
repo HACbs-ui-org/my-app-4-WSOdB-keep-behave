@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-wjxl
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/my-app-4/devfile-sample-go-basic-wjxl@sha256:3f548b21f13f33443291252b78c83e9bc0163457b09285882c4617a10376d215
+        name: my-go
+        resources: {}
+status: {}
